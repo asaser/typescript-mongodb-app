@@ -10,7 +10,7 @@ function App() {
     async function loadNotes() {
       try {
         // Todo zmienic url na lepszy
-        const response = await fetch("http://localhost:5000/api/notes", { method: "GET" })
+        const response = await fetch("api/notes", { method: "GET" })
         const notes = await response.json();
 
         // Todo sprawdzic czy jak sie zmieni NOTES na inny tekst to bedzie dzialac bo jest podobny do 
